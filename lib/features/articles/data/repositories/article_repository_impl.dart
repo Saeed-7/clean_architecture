@@ -9,7 +9,7 @@ import 'package:clean_architecture/features/articles/domain/repositories/article
 import 'package:clean_architecture/features/articles/data/models/article_model.dart';
 import 'package:clean_architecture/features/articles/data/data_sources/article_service.dart';
 import 'package:clean_architecture/shared/entities/result.dart';
-import 'package:clean_architecture/core/utils/api_helper.dart';
+import 'package:clean_architecture/shared/utils/api_helper.dart';
 
 /// Created by Saeed Fekri on 12/28/2024.
 ///
