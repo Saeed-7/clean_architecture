@@ -55,7 +55,7 @@ To implement this, I wrote an EnvUtils class and invoked its init method in the 
 
 **Method 2: Simple Approach**
 1. Register on [NewsAPI](https://newsapi.org) and obtain your newsApiKey.
-2. Assign your "newsApiKey" directly in the [UrlConstants](lib/core/constants/url_constants.dart) class.
+2. Assign your ```newsApiKey``` directly in the [UrlConstants](lib/core/constants/url_constants.dart) class.
 3. Remove the ```await EnvUtils.init()``` line from the [main method](lib/main.dart) of the project.
 
 ## Web service management with Chopper
