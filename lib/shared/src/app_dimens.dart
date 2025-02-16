@@ -2,6 +2,8 @@ library;
 
 /// Created by Saeed Fekri on 1/2/2025.
 ///
+/// @email: en.saeedfekri@gmail.com
+
 class AppDimens {
   AppDimens._();
 
@@ -32,5 +34,3 @@ class AppDimens {
   static const double regularFont = 12;
   static const double smallFont = 10;
 }
-
-/// @email: en.saeedfekri@gmail.com
