@@ -1,0 +1,40 @@
+name: Flutter CI/CD
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Flutter
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 'stable'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: flutter pub get
+
+      # Step 4: Run DI Tests
+      - name: Run DI tests
+        run: flutter test test/core/di/
+
+      # Step 5: Run all Unit Tests
+      - name: Run Unit Tests
+        run: flutter test
+
+      # Step 6: Build the application (optional)
+      - name: Build APK
+        run: flutter build apk --no-sound-null-safety
